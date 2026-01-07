@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a7942778c5302ee617fe37acb13bf2cf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a7942778c5302ee617fe37acb13bf2cf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a7942778c5302ee617fe37acb13bf2cf = L.map(
+                "map_a7942778c5302ee617fe37acb13bf2cf",
+                {
+                    center: [42.0, 12.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cf5bb04ea402f5db3965543d0601cc3d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cf5bb04ea402f5db3965543d0601cc3d.addTo(map_a7942778c5302ee617fe37acb13bf2cf);
+        
+    
+            var circle_marker_ac2bfd821076f2fd33b1e319dff6cb42 = L.circleMarker(
+                [41.89, 12.51],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_a7942778c5302ee617fe37acb13bf2cf);
+        
+    
+        var popup_75d126d708c6eec0358f82179d3e7c8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55f9842c48829e5a28e860dd5a948ba1 = $(`<div id="html_55f9842c48829e5a28e860dd5a948ba1" style="width: 100.0%; height: 100.0%;"><b>Lazio</b><br>ARANCIONE: Rischio Idraulico</div>`)[0];
+                popup_75d126d708c6eec0358f82179d3e7c8b.setContent(html_55f9842c48829e5a28e860dd5a948ba1);
+            
+        
+
+        circle_marker_ac2bfd821076f2fd33b1e319dff6cb42.bindPopup(popup_75d126d708c6eec0358f82179d3e7c8b)
+        ;
+
+        
+    
+    
+            var circle_marker_fd0379b26410fc273f4fa7b673833930 = L.circleMarker(
+                [40.85, 14.26],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_a7942778c5302ee617fe37acb13bf2cf);
+        
+    
+        var popup_98de4c4dc343483ccdf6782432e0c311 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc5c05929f964bd7223152d7cc50c869 = $(`<div id="html_fc5c05929f964bd7223152d7cc50c869" style="width: 100.0%; height: 100.0%;"><b>Campania</b><br>GIALLA: Temporali</div>`)[0];
+                popup_98de4c4dc343483ccdf6782432e0c311.setContent(html_fc5c05929f964bd7223152d7cc50c869);
+            
+        
+
+        circle_marker_fd0379b26410fc273f4fa7b673833930.bindPopup(popup_98de4c4dc343483ccdf6782432e0c311)
+        ;
+
+        
+    
+    
+            var circle_marker_0102b544c9291b34fae96de4a275c825 = L.circleMarker(
+                [39.0, 16.5],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_a7942778c5302ee617fe37acb13bf2cf);
+        
+    
+        var popup_23b683e77968eb123de521e5a03c80a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31eb439a9fe6bac8501b8a5de37e5701 = $(`<div id="html_31eb439a9fe6bac8501b8a5de37e5701" style="width: 100.0%; height: 100.0%;"><b>Calabria</b><br>GIALLA: Idrogeologico</div>`)[0];
+                popup_23b683e77968eb123de521e5a03c80a9.setContent(html_31eb439a9fe6bac8501b8a5de37e5701);
+            
+        
+
+        circle_marker_0102b544c9291b34fae96de4a275c825.bindPopup(popup_23b683e77968eb123de521e5a03c80a9)
+        ;
+
+        
+    
+    
+            var circle_marker_8e71bb02cbfa9f6dc3d8d1ab824c15c4 = L.circleMarker(
+                [44.49, 11.34],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_a7942778c5302ee617fe37acb13bf2cf);
+        
+    
+        var popup_9f0ba24ec0952a341c2613681b47527c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_743a45340d6178c4c65467c1dffe3a13 = $(`<div id="html_743a45340d6178c4c65467c1dffe3a13" style="width: 100.0%; height: 100.0%;"><b>Emilia-Romagna</b><br>GIALLA: Neve e Ghiaccio</div>`)[0];
+                popup_9f0ba24ec0952a341c2613681b47527c.setContent(html_743a45340d6178c4c65467c1dffe3a13);
+            
+        
+
+        circle_marker_8e71bb02cbfa9f6dc3d8d1ab824c15c4.bindPopup(popup_9f0ba24ec0952a341c2613681b47527c)
+        ;
+
+        
+    
+    
+            var circle_marker_4651f119ca661d4743f8e6d3a4f5e733 = L.circleMarker(
+                [42.35, 13.39],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_a7942778c5302ee617fe37acb13bf2cf);
+        
+    
+        var popup_445362302d9a506e41e4d8f36f7ce951 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_536c9ebf23b4673da5b4b61f1ac63690 = $(`<div id="html_536c9ebf23b4673da5b4b61f1ac63690" style="width: 100.0%; height: 100.0%;"><b>Abruzzo</b><br>GIALLA: Neve</div>`)[0];
+                popup_445362302d9a506e41e4d8f36f7ce951.setContent(html_536c9ebf23b4673da5b4b61f1ac63690);
+            
+        
+
+        circle_marker_4651f119ca661d4743f8e6d3a4f5e733.bindPopup(popup_445362302d9a506e41e4d8f36f7ce951)
+        ;
+
+        
+    
+    
+            var circle_marker_3240abd642466fecf7cfdb0dc143a79d = L.circleMarker(
+                [37.5, 14.5],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_a7942778c5302ee617fe37acb13bf2cf);
+        
+    
+        var popup_c1c1de71673bf410db3409e0f8b524ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7086cce5225ba5154653650770a5a8e8 = $(`<div id="html_7086cce5225ba5154653650770a5a8e8" style="width: 100.0%; height: 100.0%;"><b>Sicilia</b><br>GIALLA: Vento e Temporali</div>`)[0];
+                popup_c1c1de71673bf410db3409e0f8b524ba.setContent(html_7086cce5225ba5154653650770a5a8e8);
+            
+        
+
+        circle_marker_3240abd642466fecf7cfdb0dc143a79d.bindPopup(popup_c1c1de71673bf410db3409e0f8b524ba)
+        ;
+
+        
+    
+</script>
+</html>
